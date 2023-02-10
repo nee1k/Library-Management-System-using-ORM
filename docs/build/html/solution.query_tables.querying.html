@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Query and Join Operations &mdash; Library Management System 1.0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Sort Operations" href="solution.query_tables.sorting.html" />
+    <link rel="prev" title="Queries performed" href="solution.query_tables.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Library Management System
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="solution.create_classes.html">Classes involved in Library Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solution.populate_tables.html">Objects involved in Library Management</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="solution.query_tables.html">Queries performed</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Query and Join Operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="solution.query_tables.sorting.html">Sort Operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="solution.query_tables.updating.html">Update Operations</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Library Management System</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="solution.query_tables.html">Queries performed</a> &raquo;</li>
+      <li>Query and Join Operations</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/solution.query_tables.querying.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <span class="target" id="module-solution.query_tables.querying"></span><section id="query-and-join-operations">
+<h1>Query and Join Operations<a class="headerlink" href="#query-and-join-operations" title="Permalink to this headline"></a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="solution.query_tables.querying.join_dept_staff">
+<span class="sig-prename descclassname"><span class="pre">solution.query_tables.querying.</span></span><span class="sig-name descname"><span class="pre">join_dept_staff</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">session</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/solution/query_tables/querying.html#join_dept_staff"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#solution.query_tables.querying.join_dept_staff" title="Permalink to this definition"></a></dt>
+<dd><p>Joins the department table and staff table with dept_id</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>session</strong> (<a class="reference external" href="https://docs.sqlalchemy.org/en/14/orm/session_api.html#sqlalchemy.orm.Session" title="(in SQLAlchemy v1.4)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.session.Session</span></code></a>) – session object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>result</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>iterable</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="solution.query_tables.querying.join_dept_student">
+<span class="sig-prename descclassname"><span class="pre">solution.query_tables.querying.</span></span><span class="sig-name descname"><span class="pre">join_dept_student</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">session</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/solution/query_tables/querying.html#join_dept_student"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#solution.query_tables.querying.join_dept_student" title="Permalink to this definition"></a></dt>
+<dd><p>Joins the department table and student table with dept_id</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>session</strong> (<a class="reference external" href="https://docs.sqlalchemy.org/en/14/orm/session_api.html#sqlalchemy.orm.Session" title="(in SQLAlchemy v1.4)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.session.Session</span></code></a>) – session object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>result</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>iterable</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="solution.query_tables.querying.join_student_book">
+<span class="sig-prename descclassname"><span class="pre">solution.query_tables.querying.</span></span><span class="sig-name descname"><span class="pre">join_student_book</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">session</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/solution/query_tables/querying.html#join_student_book"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#solution.query_tables.querying.join_student_book" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the students who took books from other departments</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>session</strong> (<a class="reference external" href="https://docs.sqlalchemy.org/en/14/orm/session_api.html#sqlalchemy.orm.Session" title="(in SQLAlchemy v1.4)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.session.Session</span></code></a>) – session object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>result</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>iterable</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="solution.query_tables.querying.perform_join_operations">
+<span class="sig-prename descclassname"><span class="pre">solution.query_tables.querying.</span></span><span class="sig-name descname"><span class="pre">perform_join_operations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">session</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/solution/query_tables/querying.html#perform_join_operations"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#solution.query_tables.querying.perform_join_operations" title="Permalink to this definition"></a></dt>
+<dd><p>Performs the join operations using Query API</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>session</strong> (<a class="reference external" href="https://docs.sqlalchemy.org/en/14/orm/session_api.html#sqlalchemy.orm.Session" title="(in SQLAlchemy v1.4)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.session.Session</span></code></a>) – session object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="solution.query_tables.querying.perform_query_operations">
+<span class="sig-prename descclassname"><span class="pre">solution.query_tables.querying.</span></span><span class="sig-name descname"><span class="pre">perform_query_operations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">session</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/solution/query_tables/querying.html#perform_query_operations"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#solution.query_tables.querying.perform_query_operations" title="Permalink to this definition"></a></dt>
+<dd><p>Performs the query operations using Query API</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>session</strong> (<a class="reference external" href="https://docs.sqlalchemy.org/en/14/orm/session_api.html#sqlalchemy.orm.Session" title="(in SQLAlchemy v1.4)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.session.Session</span></code></a>) – session object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="solution.query_tables.querying.query_available_books">
+<span class="sig-prename descclassname"><span class="pre">solution.query_tables.querying.</span></span><span class="sig-name descname"><span class="pre">query_available_books</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">session</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/solution/query_tables/querying.html#query_available_books"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#solution.query_tables.querying.query_available_books" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the books that are available in the library</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>session</strong> (<a class="reference external" href="https://docs.sqlalchemy.org/en/14/orm/session_api.html#sqlalchemy.orm.Session" title="(in SQLAlchemy v1.4)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.session.Session</span></code></a>) – session object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>books</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)">list</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="solution.query_tables.querying.query_popular_course">
+<span class="sig-prename descclassname"><span class="pre">solution.query_tables.querying.</span></span><span class="sig-name descname"><span class="pre">query_popular_course</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">session</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/solution/query_tables/querying.html#query_popular_course"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#solution.query_tables.querying.query_popular_course" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the courses that had the highest enrollments</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>session</strong> (<a class="reference external" href="https://docs.sqlalchemy.org/en/14/orm/session_api.html#sqlalchemy.orm.Session" title="(in SQLAlchemy v1.4)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.session.Session</span></code></a>) – session object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>course</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)">list</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="solution.query_tables.querying.query_popular_student">
+<span class="sig-prename descclassname"><span class="pre">solution.query_tables.querying.</span></span><span class="sig-name descname"><span class="pre">query_popular_student</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">session</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/solution/query_tables/querying.html#query_popular_student"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#solution.query_tables.querying.query_popular_student" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the courses that had the highest enrollments</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>session</strong> (<a class="reference external" href="https://docs.sqlalchemy.org/en/14/orm/session_api.html#sqlalchemy.orm.Session" title="(in SQLAlchemy v1.4)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.session.Session</span></code></a>) – session object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>student</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)">list</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="solution.query_tables.html" class="btn btn-neutral float-left" title="Queries performed" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="solution.query_tables.sorting.html" class="btn btn-neutral float-right" title="Sort Operations" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, neelesh.karthi@gmail.com.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

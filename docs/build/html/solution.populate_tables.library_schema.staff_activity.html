@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Staff_Activity Objects &mdash; Library Management System 1.0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Student_Activity Objects" href="solution.populate_tables.library_schema.student_activity.html" />
+    <link rel="prev" title="Librarian Objects" href="solution.populate_tables.library_schema.librarian.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Library Management System
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="solution.create_classes.html">Classes involved in Library Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solution.populate_tables.html">Objects involved in Library Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solution.query_tables.html">Queries performed</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Library Management System</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="solution.populate_tables.html">Objects involved in Library Management</a> &raquo;</li>
+      <li>Staff_Activity Objects</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/solution.populate_tables.library_schema.staff_activity.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <span class="target" id="module-solution.populate_tables.library_schema.staff_activity"></span><section id="staff-activity-objects">
+<h1>Staff_Activity Objects<a class="headerlink" href="#staff-activity-objects" title="Permalink to this headline"></a></h1>
+<p>Module for populating StaffActivity Class</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="solution.populate_tables.library_schema.staff_activity.lend_book_staff">
+<span class="sig-prename descclassname"><span class="pre">solution.populate_tables.library_schema.staff_activity.</span></span><span class="sig-name descname"><span class="pre">lend_book_staff</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">session</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/solution/populate_tables/library_schema/staff_activity.html#lend_book_staff"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#solution.populate_tables.library_schema.staff_activity.lend_book_staff" title="Permalink to this definition"></a></dt>
+<dd><p>Function for populating orm class</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>session</strong> (<a class="reference external" href="https://docs.sqlalchemy.org/en/14/orm/session_api.html#sqlalchemy.orm.Session" title="(in SQLAlchemy v1.4)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.session.Session</span></code></a>) – Session object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="solution.populate_tables.library_schema.staff_activity.return_book_staff">
+<span class="sig-prename descclassname"><span class="pre">solution.populate_tables.library_schema.staff_activity.</span></span><span class="sig-name descname"><span class="pre">return_book_staff</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">session</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trans_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fine_per_day</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/solution/populate_tables/library_schema/staff_activity.html#return_book_staff"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#solution.populate_tables.library_schema.staff_activity.return_book_staff" title="Permalink to this definition"></a></dt>
+<dd><p>Updates the StaffActivity and Book table while returning the book</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>session</strong> (<a class="reference external" href="https://docs.sqlalchemy.org/en/14/orm/session_api.html#sqlalchemy.orm.Session" title="(in SQLAlchemy v1.4)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.orm.session.Session</span></code></a>) – Session object</p></li>
+<li><p><strong>trans_id</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – pk_id in StaffActivity table</p></li>
+<li><p><strong>return_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">datetime.datetime</span></code></a>) – return date</p></li>
+<li><p><strong>fine_per_day</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – fine_per_day</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="solution.populate_tables.library_schema.librarian.html" class="btn btn-neutral float-left" title="Librarian Objects" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="solution.populate_tables.library_schema.student_activity.html" class="btn btn-neutral float-right" title="Student_Activity Objects" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, neelesh.karthi@gmail.com.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

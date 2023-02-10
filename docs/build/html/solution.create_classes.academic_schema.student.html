@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Class &mdash; Library Management System 1.0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Course Class" href="solution.create_classes.academic_schema.course.html" />
+    <link rel="prev" title="Staff Class" href="solution.create_classes.academic_schema.staff.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Library Management System
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="solution.create_classes.html">Classes involved in Library Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solution.populate_tables.html">Objects involved in Library Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solution.query_tables.html">Queries performed</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Library Management System</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="solution.create_classes.html">Classes involved in Library Management</a> &raquo;</li>
+      <li>Student Class</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/solution.create_classes.academic_schema.student.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <span class="target" id="module-solution.create_classes.academic_schema.student"></span><section id="student-class">
+<h1>Student Class<a class="headerlink" href="#student-class" title="Permalink to this headline"></a></h1>
+<p>Code for creating ORM Class</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="solution.create_classes.academic_schema.student.Student">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">solution.create_classes.academic_schema.student.</span></span><span class="sig-name descname"><span class="pre">Student</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dept_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date_of_joining</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fine_amt</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/solution/create_classes/academic_schema/student.html#Student"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#solution.create_classes.academic_schema.student.Student" title="Permalink to this definition"></a></dt>
+<dd><p>Student class docstring</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pk_id</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – pk_id</p></li>
+<li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – name</p></li>
+<li><p><strong>date_of_joining</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.date" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">datetime.date</span></code></a>) – date_of_joining</p></li>
+<li><p><strong>dept_id</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – dept_id</p></li>
+<li><p><strong>fine_amt</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – fine amount</p></li>
+<li><p><strong>created_by</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – user name of creator</p></li>
+<li><p><strong>created_on</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">datetime.datetime</span></code></a>) – timestamp while creating</p></li>
+<li><p><strong>last_updated_by</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – user name of updater</p></li>
+<li><p><strong>last_updated_on</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">datetime.datetime</span></code></a>) – timestamp while updating</p></li>
+<li><p><strong>is_active</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a>) – active status</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="solution.create_classes.academic_schema.student.Student.created_by">
+<span class="sig-name descname"><span class="pre">created_by</span></span><a class="headerlink" href="#solution.create_classes.academic_schema.student.Student.created_by" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="solution.create_classes.academic_schema.student.Student.created_on">
+<span class="sig-name descname"><span class="pre">created_on</span></span><a class="headerlink" href="#solution.create_classes.academic_schema.student.Student.created_on" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="solution.create_classes.academic_schema.student.Student.is_active">
+<span class="sig-name descname"><span class="pre">is_active</span></span><a class="headerlink" href="#solution.create_classes.academic_schema.student.Student.is_active" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="solution.create_classes.academic_schema.student.Student.last_updated_by">
+<span class="sig-name descname"><span class="pre">last_updated_by</span></span><a class="headerlink" href="#solution.create_classes.academic_schema.student.Student.last_updated_by" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="solution.create_classes.academic_schema.student.Student.last_updated_on">
+<span class="sig-name descname"><span class="pre">last_updated_on</span></span><a class="headerlink" href="#solution.create_classes.academic_schema.student.Student.last_updated_on" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="solution.create_classes.academic_schema.student.Student.pk_id">
+<span class="sig-name descname"><span class="pre">pk_id</span></span><a class="headerlink" href="#solution.create_classes.academic_schema.student.Student.pk_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="solution.create_classes.academic_schema.staff.html" class="btn btn-neutral float-left" title="Staff Class" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="solution.create_classes.academic_schema.course.html" class="btn btn-neutral float-right" title="Course Class" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, neelesh.karthi@gmail.com.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "disable_existing_loggers": false,
+  "formatters": {
+    "package_formatter": {
+      "format": "[%(asctime)s] - [%(levelname)s] - [%(name)s.%(funcName)s]: %(message)s"
+    }
+  },
+  "handlers": {
+    "console": {
+      "class": "logging.StreamHandler",
+      "level": "DEBUG",
+      "formatter": "package_formatter"
+    },
+    "error_handler": {
+      "class": "logging.FileHandler",
+      "filename": "logs/errors.log",
+      "level": "ERROR",
+      "formatter": "package_formatter"
+    }
+  },
+  "loggers": {
+  },
+  "root": {
+    "level": "DEBUG",
+    "handlers": [
+      "console",
+      "error_handler"
+    ]
+  }
+}
